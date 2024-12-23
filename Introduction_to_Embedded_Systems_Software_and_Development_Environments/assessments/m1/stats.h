@@ -18,23 +18,33 @@
  * @date <Add date >
  *
  */
-#ifndef __STATS_H__
-#define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+#ifndef STATS_H
+#define STATS_H
 
-/**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
+#ifndef STATS_H
+#define STATS_H
 
+// Function to print statistics of an array: min, max, mean, median
+void print_statistics(unsigned char *array, int length);
 
-#endif /* __STATS_H__ */
+// Function to print the array
+void print_array(unsigned char *array, int length);
+
+// Function to find and return the median value of the array
+int find_median(unsigned char *array, int length);
+
+// Function to find and return the mean of the array
+double find_mean(unsigned char *array, int length);
+
+// Function to find and return the maximum value in the array
+int find_maximum(unsigned char *array, int length);
+
+// Function to find and return the minimum value in the array
+int find_minimum(unsigned char *array, int length);
+
+// Function to sort the array from smallest to largest
+void sort_array(unsigned char *array, int length);
+
+#endif // STATS_H
+// Function prototypes
